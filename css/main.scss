@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-size: 13px;
+    -webkit-text-size-adjust: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+  }
+  
+  ::-moz-selection {
+    background: #000;
+    color: #fff;
+  }
+  
+  a {
+    transition: all 0.2s ease 0s;
+    color: #fff;
+  
+    &:hover {
+      color: #fff;
+    }
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .header {
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    padding: 50px;
+  
+    .logo {
+      width: 178px;
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    .nav-icon {
+      a {
+        background: transparent;
+        display: inline-block;
+        height: 50px;
+        position: relative;
+        transition: all 0.3s ease 0s;
+        width: 84px;
+  
+        &:before, &:after {
+          background: #fff;
+          content: "";
+          display: inline-block;
+          height: 5px;
+          left: 0;
+          position: absolute;
+          transform-origin: 0.28571rem center 0;
+          transition: all 0.3s ease 0s;
+          width: 34px;
+        }
+  
+        &:before {
+          top: 14px;
+          left: 7px;
+        }
+  
+        &:after {
+          top: 0px;
+        }
+      }
+  
+      .activemenu .nav-icon {
+        height: 0;
+  
+        &:before, &:after {
+          transition: top 0.3s ease 0s, transform 0.3s ease 0.5s;
+          width: 100%;
+          transform: none;
+          top: 0;
+        }
+      }
+    }
+  }
+  
+  .mainbanner {
+    position: relative;
+  
+    h1 {
+      position: absolute;
+      left: 0;
+      font-family: "Roboto", sans-serif;
+      font-size: 90px;
+      line-height: 109px;
+      letter-spacing: 5.4px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      background: url(../images/banner-text-back.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 80px 0px 100px 200px;
+      bottom: 155px;
+      left: 68px;
+    }
+  
+    .owl-dots {
+      display: none;
+    }
+  
+    .owl-nav {
+      position: absolute;
+      right: 78px;
+      bottom: 80px;
+  
+      button {
+        background: url(../images/slide-rgt.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+  
+      pointer-events: none;
+  
+      * {
+        pointer-events: auto;
+      }
+    }
+  
+    .owl-carousel .owl-nav button {
+      background: url(../images/slide-rgt.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 80px;
+      height: 40px;
+      color: transparent;
+      margin: 0 5px;
+    }
+  
+    .owl-nav button.owl-prev {
+      transform: rotateY(180deg);
+    }
+  
+    height: 100vh;
+  
+    .owl-carousel .owl-item img {
+      height: 100vh;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  
+  /*# sourceMappingURL=main.css.map */
+  

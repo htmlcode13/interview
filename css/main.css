@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-size: 13px;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
+a {
+  transition: all 0.2s ease 0s;
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+
+button:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  padding: 50px;
+}
+.header .logo {
+  width: 178px;
+}
+.header .logo img {
+  width: 100%;
+}
+.header .nav-icon a {
+  background: transparent;
+  display: inline-block;
+  height: 50px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  width: 84px;
+}
+.header .nav-icon a:before, .header .nav-icon a:after {
+  background: #fff;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  transform-origin: 0.28571rem center 0;
+  transition: all 0.3s ease 0s;
+  width: 34px;
+}
+.header .nav-icon a:before {
+  top: 14px;
+  left: 7px;
+}
+.header .nav-icon a:after {
+  top: 0px;
+}
+.header .nav-icon .activemenu .nav-icon {
+  height: 0;
+}
+.header .nav-icon .activemenu .nav-icon:before, .header .nav-icon .activemenu .nav-icon:after {
+  transition: top 0.3s ease 0s, transform 0.3s ease 0.5s;
+  width: 100%;
+  transform: none;
+  top: 0;
+}
+
+.mainbanner {
+  position: relative;
+  height: 100vh;
+}
+.mainbanner h1 {
+  position: absolute;
+  left: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 90px;
+  line-height: 109px;
+  letter-spacing: 5.4px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background: url(../images/banner-text-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0px 100px 200px;
+  bottom: 155px;
+  left: 68px;
+}
+.mainbanner .owl-dots {
+  display: none;
+}
+.mainbanner .owl-nav {
+  position: absolute;
+  right: 78px;
+  bottom: 80px;
+  pointer-events: none;
+}
+.mainbanner .owl-nav button {
+  background: url(../images/slide-rgt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mainbanner .owl-nav * {
+  pointer-events: auto;
+}
+.mainbanner .owl-carousel .owl-nav button {
+  background: url(../images/slide-rgt.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 80px;
+  height: 40px;
+  color: transparent;
+  margin: 0 5px;
+}
+.mainbanner .owl-nav button.owl-prev {
+  transform: rotateY(180deg);
+}
+.mainbanner .owl-carousel .owl-item img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,75 @@
+.nav-icon {	position: absolute;	left: auto;	top: 0;	right: 0;	height: 100%;	padding: 0 20px;	width: 210px;	text-align: center;	display: flex;	justify-content: center;	align-items: center;}
+.nav-icon a {    color: #fff;    background: url(../images/menu-icon.svg) no-repeat;    background-size: contain;    padding-bottom: 4px;    background-position: center;    height: 22px;    display: inline-block;    padding-left: 24px;}
+.closemenu {	background: url(../images/Hamburgermenu-sluiten.svg) no-repeat;	position: absolute;	right: 55px;	width: 36px;	height: 36px;	background-size: 28px;	top: 62px;}
+.header .leftmenu{width: 258px;background:#17171B; opacity: 1; backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px);padding: 43px 60px;height: 100%;position: fixed;top: 0;right: -300px;transition: all 0.5s ease 0s;background-size:291px 100%;box-shadow:0px 0px 30px #0000004D;}
+.header .leftmenu {
+	width: 100%;
+	background: #17171B;
+	opacity: 1;
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	padding: 43px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	top: -100%;
+	transition: all 0.5s ease 0s;
+	background-size: 291px 100%;
+	box-shadow: 0px 0px 30px #0000004D;
+	left: 0;
+	right: 0;
+}
+.activemenu {
+	overflow: hidden;
+}
+.activemenu .header .leftmenu {
+	top: 0;
+}
+.activemenu .header .leftmenu > ul {	margin-top: 210px;} 
+
+.header .leftmenu > ul {
+/*	margin-top: 310px;*/
+	overflow: hidden;
+	margin-bottom: 0;
+/*	height: calc(100vh - 225px);*/
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 80px;
+}
+body, html {
+	overflow: hidden;
+}
+.header .leftmenu ul li{list-style: none;position: relative;}
+.header .leftmenu ul li .accordion-toggle {position: absolute; right: 0; background: url(../images/dwn.svg) no-repeat; width: 12px; height: 33px; background-size: 23px; width: 100%; background-position:right center;cursor: pointer;}
+.header .leftmenu ul li a {	font-weight: bold;	letter-spacing: 0px;text-decoration: none;	color: #FFF;	font-size: 80px;	line-height: 120px;	font-family: 'Roboto', sans-serif; font-style: italic; font-weight: 700;}
+.activemenu .header .logo {	position: relative;	z-index: 99999;}
+.header .leftmenu ul li.open > a,
+.header .leftmenu ul li a.active,
+.header .leftmenu ul li a:hover{color:  #B19777;}
+.header .leftmenu ul li ul li{padding-left: 15px;margin-bottom: 12px;}
+.header .leftmenu ul li ul{margin-top: 10px;display: none;}
+.header .leftmenu ul li.open .accordion-toggle{transform: rotate(180deg);background-position: left center}
+
+.header .leftmenu > ul > li{margin-bottom: 23px}
+.header .leftmenu ul li {position: relative; 	float: left;	height: 120px;		opacity: 1; width: 100%;	}
+.header .leftmenu ul li a{ position: absolute; bottom: 0; left: 0; right: 0; width: 100%; transform: translateY(100%); }
+.activemenu .header .leftmenu ul li a { animation: fadeIn 0.66s ease-in both;  transform: translateY(0%);   opacity: 1; }
+
+.header .leftmenu ul li:nth-child(1) a{	animation-delay: 0.66s;}
+.header .leftmenu ul li:nth-child(2) a{	animation-delay: 0.99s;}
+.header .leftmenu ul li:nth-child(3) a {	animation-delay: 1.33s;}
+.header .leftmenu ul li:nth-child(4) a{	animation-delay: 1.66s;}
+.header .nav-icon a {	background: transparent;	display: inline-block;	height: 50px;	position: relative;	transition: all 0.3s ease 0s;	width: 84px;}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
